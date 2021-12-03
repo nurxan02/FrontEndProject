@@ -11,7 +11,6 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../sass/SplashScreen/splashScreen.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,27 +20,7 @@
 </head>
 
 <body>
-    <!-- <div class="splashScreen">
-        <div class="splash">
-            <div class="splash_logo">
-              NM
-            </div>
-            <div class="splash_svg">
-              <svg width="100%" height="100%">
-                <rect width="100%" height="100%" >
-              </svg>
-            </div>
-            <div class="splash_minimize">
-              <svg width="100%" height="100%">
-                <rect width="100%" height="100%" >
-              </svg>
-            </div>
-          </div>
-          <div class="text">
-            <p>Welcome</p>
-            <p>My FrontEnd Project</p>
-          </div>
-    </div> -->
+
     <header>
         <nav>
             <div class="container">
@@ -253,7 +232,159 @@
         </nav>
     </header>
     <main>
+        <section id="flowers">
+            <div class="container">
+                <div class="row">
+                    <div class="filters-filterbtn d-flex justify-content-between">
+                        <div class="filters col-lg-10">
+                            <span data-id="all">ALL</span>
+                            <span data-id="popular" style="margin-left: 15px;">POPULAR</span>
+                            <span data-id="winter" style="margin-left: 15px;">WINTER</span>
+                            <span data-id="various" style="margin-left: 15px;">VARIOUS</span>
+                            <span data-id="exotic" style="margin-left: 15px;">EXOTIC</span>
+                            <span data-id="greens" style="margin-left: 15px;">GREENS</span>
+                            <span data-id="cactuses" style="margin-left: 15px;">CACTUSES</span>
+                        </div>
+                        <div class="filterbtn col-lg-2 d-flex justify-content-end">
+                            <span>FILTER</span><span><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                    </div>
+                    <div class="product col-lg-3 popular winter all">
+                        <div class="productImage">
+                            <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg"
+                                alt="">
 
+                        </div>
+                        <div class="productTitle">
+                            <p>MAJESTY PALM</p>
+                        </div>
+                        <div class="productPrice">
+                            <span>Add to cart</span><span>$</span><span>259</span>
+                        </div>
+                        <div class="addToCart">
+
+                        </div>
+                    </div>
+
+                    <div class="product col-lg-3 popular winter various all">
+                        <div class="productImage">
+                            <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg"
+                                alt="">
+                        </div>
+                        <div class="productTitle">
+                            <p>FOXGLOW FLOWER</p>
+                        </div>
+                        <div class="productPrice">
+                            <span>Add to cart</span> <span>$</span><span>259</span>
+                        </div>
+                        <div class="addToCart">
+
+                        </div>
+                    </div>
+
+                    <div class="product col-lg-3 popular winter all">
+                        <div class="productImage">
+                            <img src=" https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-10-img.jpg"
+                                alt="">
+                            <span class="badge badge-dark bg-dark position-absolute d-block"
+                                style=" top:3%;left: 8%;transform: scale(1.3); position: absolute; z-index: 2">Sold</span>
+                        </div>
+                        <div class="productTitle">
+                            <p>SWEET ALYYSUM</p>
+                        </div>
+                        <div class="productPrice">
+                            <span>Read more</span> <span>$</span><span>259</span>
+                        </div>
+                        <div class="addToCart">
+
+                        </div>
+                    </div>
+
+                    <div class="product col-lg-3 popular all">
+                        <div class="productImage">
+                            <img src="   https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg"
+                                alt="">
+                        </div>
+                        <div class="productTitle">
+                            <p>SPRING SNOWFLAKE</p>
+                        </div>
+                        <div class="productPrice">
+                            <span>Add to cart</span> <span>$</span><span>170</span>
+                        </div>
+                        <div class="addToCart">
+
+                        </div>
+                    </div>
+
+                    <div class="product col-lg-3 popular various all">
+                        <div class="productImage">
+                            <img src=" https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg"
+                                alt="">
+                            <span class="badge text-dark bg-light position-absolute d-block"
+                                style="top:3%;left: 8%; transform: scale(1.3);">Sale</span>
+                        </div>
+                        <div class="productTitle">
+                            <p>SCARLET SAGE</p>
+                        </div>
+                        <div class="productPrice">
+                            <span>Add to cart</span> <span style="text-decoration: line-through;">$259</span>
+                            <span>$</span><span>170</span>
+                        </div>
+                        <div class="addToCart">
+
+                        </div>
+                    </div>
+
+                    <div class="product col-lg-3 various cactuses all">
+                        <div class="productImage">
+                            <img src=" https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-9-img.jpg"
+                                alt="">
+                        </div>
+                        <div class="productTitle">
+                            <p>ROCK SOAPWORT</p>
+                        </div>
+                        <div class="productPrice">
+                            <span>View products</span> <span>$</span><span>259</span>
+                        </div>
+                        <div class="addToCart">
+
+                        </div>
+                    </div>
+
+                    <div class="product col-lg-3 greens all">
+                        <div class="productImage">
+                            <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-8-img.jpg"
+                                alt="">
+                        </div>
+                        <div class="productTitle">
+                            <p>SUMMER SAVORY</p>
+                        </div>
+                        <div class="productPrice">
+                            <span>Add to cart</span> <span>$</span><span>259</span>
+                        </div>
+                        <div class="addToCart">
+
+                        </div>
+                    </div>
+
+                    <div class="product col-lg-3 exotic all">
+                        <div class="productImage">
+                            <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-7-img.jpg"
+                                alt="">
+                        </div>
+                        <div class="productTitle">
+                            <p>WILD ROSES</p>
+                        </div>
+                        <div class="productPrice">
+                            <span>By on Amazon</span> <span>$</span><span>259</span>
+                        </div>
+                        <div class="addToCart">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 

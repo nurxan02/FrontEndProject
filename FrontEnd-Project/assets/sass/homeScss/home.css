@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  -webkit-box-shadow: 1px 25px 62px -16px rgba(0, 0, 0, 0.47);
+          box-shadow: 1px 25px 62px -16px rgba(0, 0, 0, 0.47);
+}
+
+.container .row {
+  height: 115px;
+}
+
+.container .row .logo {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .row .logo a img {
+  width: 212px;
+  height: 25px;
+}
+
+.container .row .menu {
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: normal;
+}
+
+.container .row .menu .nav_ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .row .menu .nav_ul .nav_li div {
+  position: absolute;
+  width: 220px;
+  height: 0px;
+  overflow: hidden;
+  top: 115px;
+  margin-left: -23px;
+  background-color: white;
+}
+
+.container .row .menu .nav_ul .nav_li:hover div {
+  height: 280px;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.container .row .menu .nav_ul .nav_li a {
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+}
+
+.container .row .searchSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .row .searchSection a {
+  text-decoration: none;
+  color: black;
+}
+
+main #flowers {
+  padding-bottom: 8%;
+  margin-top: 5%;
+}
+
+main #flowers .filters-filterbtn .filters span {
+  cursor: pointer;
+  font-size: 12px;
+  letter-spacing: 2px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+main #flowers .filters-filterbtn .filters span:hover {
+  color: red;
+}
+
+main #flowers .filters-filterbtn .filterbtn:hover {
+  color: red;
+}
+
+main #flowers .filters-filterbtn .filterbtn span {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+main #flowers .filters-filterbtn .filterbtn span:nth-child(1) {
+  margin-right: 5%;
+}
+
+main #flowers .product {
+  margin-top: 5%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #flowers .product .productImage {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+main #flowers .product .productImage img {
+  width: 100%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  border-radius: 8px;
+}
+
+main #flowers .product .productImage img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+main #flowers .product .productTitle {
+  cursor: pointer;
+  margin-top: 5%;
+}
+
+main #flowers .product .productTitle p {
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+
+main #flowers .product .productPrice {
+  cursor: pointer;
+}
+
+main #flowers .product .productPrice span {
+  font-size: 12px;
+  letter-spacing: 1px;
+  opacity: 50%;
+}
+
+main #flowers .product .productPrice span:nth-child(1) {
+  line-height: 1.7;
+  font-size: 15px;
+  position: absolute;
+  -webkit-transform: translateX(-120px);
+          transform: translateX(-120px);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  opacity: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+main #flowers .product:hover span {
+  opacity: 0%;
+}
+
+main #flowers .product:hover span:nth-child(1) {
+  opacity: 60%;
+  line-height: 1.7;
+  font-size: 15px;
+  position: absolute;
+  -webkit-transform: translateX(-35px);
+          transform: translateX(-35px);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+main #flowers .product:nth-child(6):hover span {
+  opacity: 0%;
+}
+
+main #flowers .product:nth-child(6):hover span:nth-child(1) {
+  opacity: 60%;
+  line-height: 1.7;
+  font-size: 15px;
+  position: absolute;
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+main #flowers .product span:nth-child(1):hover {
+  color: red;
+}
+
+@media screen and (max-width: 767px) {
+  main main #WelcomeScreen .flowersInfo .desc {
+    display: none;
+  }
+  main main #WelcomeScreen .flowersInfo {
+    width: 380px;
+    position: absolute;
+    top: 25%;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    left: -10%;
+  }
+  main main #WelcomeScreen .flowersInfo {
+    width: 380px;
+    position: absolute;
+    top: 25%;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    left: -10%;
+  }
+  main main #WelcomeScreen .images img {
+    height: 420px;
+  }
+}
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+nav {
+    box-shadow: 1px 25px 62px -16px rgba(0, 0, 0, 0.47);
+}
+
+.container {
+    .row {
+        height: 115px;
+
+        .logo {
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            a {
+                img {
+                    width: 212px;
+                    height: 25px;
+                }
+            }
+        }
+
+        .menu {
+            height: 100%;
+            align-items: center;
+            font-weight: normal;
+
+            .nav_ul {
+                display: flex;
+                list-style: none;
+                justify-content: space-around;
+                width: 100%;
+                height: 100%;
+                align-items: center;
+
+                .nav_li {
+                    div {
+                        position: absolute;
+                        width: 220px;
+                        height: 0px;
+                        overflow: hidden;
+                        top: 115px;
+                        margin-left: -23px;
+                        background-color: white;
+                    }
+
+                    &:hover div {
+                        height: 280px;
+                        transition-delay: 0.1s;
+                        transition: 0.2s;
+
+                    }
+
+                    // .home{
+                    //     position: absolute;
+                    //     width: 220px;
+                    //     height: 0px;
+                    //     overflow: hidden;
+                    //     top: 115px;
+                    //     margin-left: -23px;
+                    //     background-color: white;
+
+                    // }
+                    // .pages{
+                    //     position: absolute;
+                    //     width: 220px;
+                    //     height: 0px;
+                    //     overflow: hidden;
+                    //     top: 115px;
+                    //     margin-left: -23px;
+                    //     background-color: white;
+
+                    // }
+                    // div.elements {
+                    //     position: absolute;
+                    //     z-index: 2;
+                    //     padding: 0 15px;
+                    //     width: 220px;
+                    //     height: 0px;
+                    //     left: 0;
+                    //     top: 115px;
+                    //     line-height: 38px;
+                    //     padding-top: 45px;
+                    //     padding-bottom: 15px;
+                    //     // display: none;
+                    //     overflow: hidden;
+                    //     background-color: white;
+
+                    //     }
+                    // }
+                    // &:hover div{
+                    //     transition: 0.3s;
+                    //     height: 150px;
+
+                    a {
+                        font-size: 12px;
+                        text-decoration: none;
+                        color: black;
+                    }
+
+                }
+            }
+        }
+
+        .searchSection {
+            display: flex;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+main {
+    #flowers {
+        padding-bottom: 8%;
+        margin-top: 5%;
+
+        .filters-filterbtn {
+            .filters {
+                span {
+                    &:hover {
+                        color: red;
+                    }
+
+                    cursor: pointer;
+                    font-size: 12px;
+                    letter-spacing: 2px;
+                    transition: 0.2s;
+                }
+            }
+
+            .filterbtn {
+                &:hover {
+                    color: red;
+                }
+
+                span {
+                    transition: 0.2s;
+                    cursor: pointer;
+                    font-size: 12px;
+                    letter-spacing: 2px;
+
+                    &:nth-child(1) {
+                        margin-right: 5%;
+                    }
+                }
+            }
+        }
+
+        .product {
+            margin-top: 5%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+
+            .productImage {
+                overflow: hidden;
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                    transition: 0.6s;
+                    transition-timing-function: ease-out;
+                    border-radius: 8px;
+
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+
+                }
+            }
+
+            .productTitle {
+                cursor: pointer;
+                margin-top: 5%;
+
+                p {
+                    font-size: 12px;
+                    letter-spacing: 2px;
+                    margin-bottom: 0;
+                }
+            }
+
+            .productPrice {
+                cursor: pointer;
+
+                span {
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                    opacity: 50%;
+
+                    &:nth-child(1) {
+
+                        line-height: 1.7;
+                        font-size: 15px;
+                        position: absolute;
+                        transform: translateX(-120px);
+                        width: max-content;
+                        opacity: 0;
+                        transition: 0.6s;
+                        transition-timing-function: ease-in-out;
+                    }
+                }
+            }
+
+            &:hover {
+                span {
+                    opacity: 0%;
+
+                    &:nth-child(1) {
+                        opacity: 60%;
+                        line-height: 1.7;
+                        font-size: 15px;
+                        position: absolute;
+                        transform: translateX(-35px);
+                        width: max-content;
+                    }
+
+                }
+            }
+
+            &:nth-child(6) {
+                &:hover {
+                    span {
+                        opacity: 0%;
+                        &:nth-child(1) {
+                            opacity: 60%;
+                            line-height: 1.7;
+                            font-size: 15px;
+                            position: absolute;
+                            transform: translateX(-15px);
+                            width: max-content;
+                        }
+
+                    }
+                }
+            }
+            span {
+                &:nth-child(1) {
+
+                    &:hover {
+                        color: red;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    @media screen and(max-width:767px) {
+        main {
+            #WelcomeScreen {
+                .flowersInfo {
+                    .desc {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        main {
+            #WelcomeScreen {
+                .flowersInfo {
+                    width: 380px;
+                    position: absolute;
+                    top: 25%;
+                    transform: scale(0.6);
+                    left: -10%;
+                }
+            }
+        }
+
+        main {
+            #WelcomeScreen {
+                .flowersInfo {
+                    width: 380px;
+                    position: absolute;
+                    top: 25%;
+                    transform: scale(0.6);
+                    left: -10%;
+                }
+            }
+        }
+
+        main {
+            #WelcomeScreen {
+                .images {
+                    img {
+                        height: 420px;
+                    }
+                }
+            }
+        }
+
+    }
+}
