@@ -39,6 +39,37 @@ nav {
   font-weight: normal;
 }
 
+.container .row .menu .active {
+  border-bottom: 1px solid black;
+}
+
+.container .row .menu li:after {
+  display: block;
+  content: '';
+  border-bottom: solid 1px black;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.container .row .menu li:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.container .row .menu li:after {
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+}
+
+.container .row .menu li:after {
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+}
+
 .container .row .menu .nav_ul {
   display: -webkit-box;
   display: -ms-flexbox;
