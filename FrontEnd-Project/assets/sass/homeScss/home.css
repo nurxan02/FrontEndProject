@@ -10,13 +10,15 @@
 nav {
   -webkit-box-shadow: 1px 25px 62px -16px rgba(0, 0, 0, 0.47);
           box-shadow: 1px 25px 62px -16px rgba(0, 0, 0, 0.47);
+  position: -webkit-sticky;
+  position: sticky;
 }
 
-.container .row {
+.container .navMenu {
   height: 115px;
 }
 
-.container .row .logo {
+.container .navMenu .logo {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,12 +28,12 @@ nav {
           align-items: center;
 }
 
-.container .row .logo a img {
+.container .navMenu .logo a img {
   width: 212px;
   height: 25px;
 }
 
-.container .row .menu {
+.container .navMenu .menu {
   height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -39,11 +41,11 @@ nav {
   font-weight: normal;
 }
 
-.container .row .menu .active {
+.container .navMenu .menu .active {
   border-bottom: 1px solid black;
 }
 
-.container .row .menu li:after {
+.container .navMenu .menu li:after {
   display: block;
   content: '';
   border-bottom: solid 1px black;
@@ -55,22 +57,22 @@ nav {
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 
-.container .row .menu li:hover:after {
+.container .navMenu .menu li:hover:after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-.container .row .menu li:after {
+.container .navMenu .menu li:after {
   -webkit-transform-origin: 100% 50%;
           transform-origin: 100% 50%;
 }
 
-.container .row .menu li:after {
+.container .navMenu .menu li:after {
   -webkit-transform-origin: 0% 50%;
           transform-origin: 0% 50%;
 }
 
-.container .row .menu .nav_ul {
+.container .navMenu .menu .nav_ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,7 +86,7 @@ nav {
           align-items: center;
 }
 
-.container .row .menu .nav_ul .nav_li div {
+.container .navMenu .menu .nav_ul .nav_li div {
   position: absolute;
   width: 220px;
   height: 0px;
@@ -94,7 +96,7 @@ nav {
   background-color: white;
 }
 
-.container .row .menu .nav_ul .nav_li:hover div {
+.container .navMenu .menu .nav_ul .nav_li:hover div {
   height: 280px;
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
@@ -102,13 +104,13 @@ nav {
   transition: 0.2s;
 }
 
-.container .row .menu .nav_ul .nav_li a {
+.container .navMenu .menu .nav_ul .nav_li a {
   font-size: 12px;
   text-decoration: none;
   color: black;
 }
 
-.container .row .searchSection {
+.container .navMenu .searchSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,7 +119,7 @@ nav {
           align-items: center;
 }
 
-.container .row .searchSection a {
+.container .navMenu .searchSection a {
   text-decoration: none;
   color: black;
 }
@@ -285,5 +287,92 @@ main #flowers .product span:nth-child(1):hover {
   main main #WelcomeScreen .images img {
     height: 420px;
   }
+}
+
+main #valentineDay {
+  background-color: #f7f7f7;
+  height: 641px;
+}
+
+main #valentineDay .container {
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #valentineDay .container .play {
+  position: relative;
+}
+
+main #valentineDay .container .play .image {
+  overflow: hidden;
+}
+
+main #valentineDay .container .play .image:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+main #valentineDay .container .play .image img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  max-width: 100%;
+}
+
+main #valentineDay .container .play .button-play {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+main #valentineDay .container .play .button-play .play-button {
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  -webkit-box-shadow: 0px 0px 8px 3px #9e3636;
+          box-shadow: 0px 0px 8px 3px #9e3636;
+  border-radius: 50%;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #valentineDay .container .valentineDayDescription {
+  height: 100%;
+}
+
+main #valentineDay .container .valentineDayDescription .overClass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+main #valentineDay .container .valentineDayDescription .overClass div {
+  padding-bottom: 40px;
+}
+
+main #valentineDay .container .valentineDayDescription .overClass .supriseValentine h2 {
+  font-size: 39px;
+}
+
+main #valentineDay .container .valentineDayDescription .overClass .WhereFloversTitle h4 {
+  font-size: 19px;
+}
+
+main #valentineDay .container .valentineDayDescription .overClass .hearthIcons div span {
+  font-size: 19px;
 }
 /*# sourceMappingURL=home.css.map */
