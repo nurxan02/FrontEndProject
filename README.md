@@ -17,10 +17,8 @@
   </p>
 </div>
 <!-- CONTACT -->
-## Contact
+# Contact
 
 Your Name - [@your_twitter](https://twitter.com/thenurkhan)
 
 Project Link:(https://github.com/nurxan02/FrontEndProject)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
