@@ -19,6 +19,6 @@
 <!-- CONTACT -->
 # Contact
 
-Your Name - [@your_twitter](https://twitter.com/thenurkhan)
+Your Name - [@thenurkhan](https://twitter.com/thenurkhan)
 
 Project Link:(https://github.com/nurxan02/FrontEndProject)
