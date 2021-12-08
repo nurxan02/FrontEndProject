@@ -1,9 +1,7 @@
 let addBasket = document.querySelectorAll(".addBasket");
-
 if (localStorage.getItem("basket") == null) {
     localStorage.setItem("basket", JSON.stringify([]));
 }
-
 for (let itemBasket of addBasket) {
     itemBasket.onclick = function (e) {
         e.preventDefault();

@@ -368,7 +368,7 @@ for (let menu of p_menus) {
     })
 }
 
-// In Home Second Slider start
+//Home Second Slider
 $(document).ready(function () {
     $('.slider.multiple-items').slick({
         infinite: true,
@@ -379,7 +379,7 @@ $(document).ready(function () {
     });
 });
 
-// Main Slider In Home
+//Main Slider Home
 $('.images.multiple-items').slick({
     infinite: true,
     autoplay: true,
